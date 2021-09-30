@@ -11,7 +11,7 @@
 	$mail->IsHTML(true);
 
 	//From
-	$mail->setForm('site846@fls.guru', 'From my site');
+	$mail->setFrom('mySite846@gmail.com', 'From my site');
 	//To
 	$mail->addAddress('Danilam846@gmail.com');
 	//Theme
