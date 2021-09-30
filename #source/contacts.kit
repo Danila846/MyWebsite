@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>ToDo App</title>
+	<meta charset="utf=8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/contacts-style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="shortcut icon" href="">
+	<script src="js/c-script.js"></script>
+</head>
+
+<body>
+	<!-- @import "header.html" -->
+
+	<div class="container">
+		<div class="form">
+			<form action="" class="form__body" id="form">
+				<h2 class="form__title">Contact me</h2>
+				<div class="form__flex">
+					<div class="form__item">
+						<label for="formName" class="form__label"></label>
+						<input type="text" id="formName" placeholder="Name*" name="name" class="form__input _req">
+					</div>
+					<div class="form__item">
+						<label for="formEmail" class="form__label"></label>
+						<input type="text" id="formEmail" placeholder="E-mail*" name="email" class="form__input _req _email">
+					</div>
+					<div class="form__item third">
+						<label for="formNumber" class="form__label"></label>
+						<input type="text" id="formNumber" placeholder="Number" name="number" class="form__input">
+					</div>
+				</div>
+				<div class="form__item">
+					<label for="formMessage" class="form__label"></label>
+					<textarea name="message" placeholder="Message" class="form__input" id="formMessage"></textarea>
+				</div>
+				<div class="form__item attach">
+					<label for="formMessage" class="form__label label-file">Attach image:</label>
+					<div class="file">
+						<div class="file__item">
+							<input accept=".jpeg, .png, .gif" type="file" id="formFile" name="file" class="file__input">
+							<div class="file__button">Choose</div>
+						</div>
+						<div id="formPreview" class="file__preview"></div>
+					</div>
+				</div>
+				<div class="form__item">
+					<div class="checkbox">
+						<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+						<label for="formAgreement" class="checkbox__label">I consent to the processing of personal data
+							(<a href='#'>in accordance with the
+								terms</a>)*</label>
+					</div>
+				</div>
+				<button type="submit" class="form__button">Send message</button>
+			</form>
+		</div>
+	</div>
+
+
+	<!-- @import "footer.html" -->
+
+</body>
+
+</html>

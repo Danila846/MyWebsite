@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>ToDo App</title>
+	<meta charset="utf=8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="shortcut icon" href="">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="js/script.js" defer></script></head>
+
+<body>
+<header class="header">
+	<div class="container">
+		<nav class="header__menu">
+			<ul class="header__list">
+				<li>
+					<a href="./index.html" class="header__link">Home</a>
+				</li>
+				<li>
+					<a href="./resume.html" class="header__link">Resume</a>
+				</li>
+				<li>
+					<a href="./contacts.html" class="header__link">Contacts</a>
+				</li>
+				<li>
+					<a href="./about-me.html" class="header__link">About me</a>
+				</li>
+			</ul>
+			<div class="header__burger">
+				<span></span>
+			</div>
+		</nav>
+	</div>
+</header>
+	<div class="container">
+		<div class="git-hub">
+			<main id="main">
+				<div class="card">
+					<div>
+						<img class="avatar" src="${user.avatar_url}" alt="${user.name}" />
+					</div>
+					<div class="user-info">
+						<h2>${user.name}</h2>
+						<p>${user.bio}</p>
+
+						<ul class="info">
+							<li>${user.followers}<strong>Followers</strong></li>
+							<li>${user.following}<strong>Following</strong></li>
+							<li>${user.public_repos}<strong>Repos</strong></li>
+						</ul>
+
+						<div id="repos"></div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<h2 class="my-projects">My projects</h2>
+		<div class="grid-items">
+			<div class="grid-box calculator">
+				<div class="image__project">
+					<img class="pic" src="./img/calculator.png" alt="">
+				</div>
+				<div class="project-link"><a href="./projects/calculator/calculator.html">Calculator</a></div>
+			</div>
+			<div class="grid-box quiz">
+				<div class="image__project">
+					<img class="pic" src="./img/quiz.png" alt="">
+				</div>
+				<div class="project-link"><a href="./projects/quiz/quiz.html">Quiz</a></div>
+			</div>
+			<div class="grid-box recipe">
+				<div class="image__project">
+					<img class="pic" src="./img/recipe.png" alt="">
+				</div>
+				<div class="project-link"><a href="./projects/recipe/recipe.html">Recipe</a></div>
+			</div>
+			<div class="grid-box notes">
+				<div class="image__project">
+					<img class="pic" src="./img/notes.png" alt="">
+				</div>
+				<div class="project-link"><a href="./projects/notes/notes.html">Notes</a></div>
+			</div>
+			<div class="grid-box todos">
+				<div class="image__project">
+					<img class="pic" src="./img/todo.png" alt="">
+				</div>
+				<div class="project-link"><a href="./projects/todo/todo.html">Todos</a></div>
+			</div>
+			<div class="grid-box testapp">
+				<div class="image__project">
+					<img class="pic" src="./img/test-app.png" alt="">
+				</div>
+				<div class="project-link"><a href="./projects/test-app/test-app.html">testApp</a></div>
+			</div>
+		</div>
+
+	</div>
+
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer__text">
+			<div class="footer__copy">
+				<p>Phone number:</p>
+				<p>Email:</p>
+			</div>
+			<div class="footer__info">
+				<p>+7(908)023-85-01</p>
+				<p>Danilam846@gmail.com</p>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+
+</html>

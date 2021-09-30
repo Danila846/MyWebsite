@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-weight: normal;
+	border: none;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	line-height: 1;
+	font-size: 14px;
+}
+:focus,
+:active {
+	outline: none;
+}
+
+html,
+body {
+	height: 100%;
+	min-width: 100%;
+}
+
+body {
+	position: relative;
+	user-select: none;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+h2 {
+	color: #fff;
+}
+.themes {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	display: flex;
+	flex-direction: column;
+}
+.themes > button {
+	margin-top: 5px;
+	padding: 5px;
+	background-color: hsl(231, 98%, 70%);
+	color: hsl(273, 72%, 15%);
+	font-size: 16px;
+}
+.dark-theme {
+	background-color: hsla(0, 0%, 0%, 0.888);
+}
+.light-theme {
+	background-color: hsla(180, 89%, 93%, 0.6);
+}
+
+.container {
+	max-height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	padding: 1px;
+	display: grid;
+	grid-template-columns: repeat(6, 60px);
+	grid-template-rows: minmax(100px, auto) repeat(6, 60px);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.item {
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-weight: 400;
+	display: flex;
+	background-color: hsl(0, 0%, 100%);
+}
+.upper {
+	font-size: 10px;
+	margin: -10px 0px 0px 1px;
+}
+.light-color {
+	background-color: hsl(0, 0%, 100%);
+}
+.dark-color {
+	background-color: hsla(0, 0%, 0%, 0.888);
+	color: hsl(0, 0%, 100%);
+}
+.item:hover {
+	opacity: 0.85;
+}
+.item:first-child:hover {
+	opacity: 1;
+}
+.clean {
+	grid-column: span 2;
+	font-weight: 600;
+}
+.number {
+	font-size: 20px;
+	font-weight: 600;
+}
+.equal {
+	background-color: hsl(231, 98%, 65%);
+}
+.orange {
+	font-weight: 600;
+	color: hsl(231, 98%, 55%);
+}
+.result {
+	grid-column: span 6;
+	justify-content: flex-end;
+	padding: 10px;
+	font-size: 30px;
+	font-family: "Shadows Into Light Two", sans-serif;
+	cursor: text;
+	word-wrap: break-word;
+	word-break: break-all;
+}

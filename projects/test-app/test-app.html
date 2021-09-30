@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Site</title>
+	<meta charset="utf=8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/icons/coupon1.svg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body>
+	<div class="wrapper">
+
+<aside class="sidebar">
+	<div class="sidebar__scroll">
+		<div onClick="classAdder(adder)" class="sidebar__burger-bc justtry">
+			<img src="img/Union.svg" alt="">
+			<a href="#" class="sidebar__burger">
+				<span></span>
+			</a>
+		</div>
+		<div class="sidebar__logo logo">
+			<div class="logo__image">
+				<img src="img/icons/coupon1.svg" alt="">
+			</div>
+			<div class="logo__title">BECO</div>
+		</div>
+		<nav class="sidebar__menu menu">
+			<div class="menu__items">
+				<a href="#catalog" onClick="changeCategory1(cat_1)">
+					<div class="menu__item active">
+						<div class="menu__image">
+							<img class="image_1" src="img/icons/catalog.svg" alt="">
+							<img class="image_2" src="img/icons/active/catalog.svg" alt="">
+						</div>
+						<div class="menu__category">
+							Каталог
+						</div>
+					</div>
+				</a>
+				<a href="#health" onClick="changeCategory2(cat_1)">
+					<div class="menu__item">
+						<div class="menu__image">
+							<img class="image_1" src="img/icons/health.svg" alt="">
+							<img class="image_2" src="img/icons/active/health.svg" alt="">
+						</div>
+						<div class="menu__category">
+							Здоровье
+						</div>
+					</div>
+				</a>
+				<a href="#beauty" onClick="changeCategory3(cat_1)">
+					<div class="menu__item">
+						<div class="menu__image">
+							<img class="image_1" src="img/icons/beauty.svg" alt="">
+							<img class="image_2" src="img/icons/active/beauty.svg" alt="">
+						</div>
+						<div class="menu__category">
+							Красота
+						</div>
+					</div>
+				</a>
+				<a href="#enjoy" onClick="changeCategory4(cat_1)">
+					<div class="menu__item">
+						<div class="menu__image">
+							<img class="image_1" src="img/icons/enjoy.svg" alt="">
+							<img class="image_2" src="img/icons/active/enjoy.svg" alt="">
+						</div>
+						<div class="menu__category">
+							Развлечения
+						</div>
+					</div>
+				</a>
+				<a href="#car" onClick="changeCategory5(cat_1)">
+					<div class="menu__item">
+						<div class="menu__image">
+							<img class="image_1" src="img/icons/car.svg" alt="">
+							<img class="image_2" src="img/icons/active/car.svg" alt="">
+						</div>
+						<div class="menu__category">
+							Авто
+						</div>
+					</div>
+				</a>
+			</div>
+		</nav>
+	</div>
+
+</aside>		<div class="right__part">
+
+<h1>
+	<div id="category1" class="title active">Каталог</div>
+</h1>
+<header class="header">
+	<div class="header__row">
+		<div class="header__search">
+			<input type="text" placeholder="Какой магазин вам нужен?">
+			<div class="header__search-image">
+				<img src="img/icons/search.svg" alt="#">
+			</div>
+		</div>
+	</div>
+</header>			<main class="content">
+				<section class="content__cards">
+					<div class="content__card card">
+						<div class="card__top">
+							<h2 class="card__title">Пробка на мира</h2>
+							<div class="card__subtitle">Вечер на двоих</div>
+						</div>
+						<div class="card__bottom">
+							<div class="card__event">-50%</div>
+							<div class="card__event-subtitle">СКИДКА</div>
+						</div>
+						<div class="card__image">
+							<img src="img/image_1.png" alt="">
+						</div>
+					</div>
+					<div class="content__card card">
+						<div class="card-top">
+							<h2 class="card__title">Кино и немцы</h2>
+							<div class="card__subtitle">Бесплатный бокал пива</div>
+						</div>
+						<div class="card__bottom">
+							<div class="card__event">ВАРВАР</div>
+							<div class="card__event-subtitle">ПРОМОКОД</div>
+						</div>
+						<div class="card__image">
+							<img src="img/image 2.png" alt="">
+						</div>
+					</div>
+					<div class="content__card card">
+						<div class="card-top">
+							<h2 class="card__title">Valery cakes</h2>
+							<div class="card__subtitle">Торт</div>
+						</div>
+						<div class="card__bottom">
+							<div class="card__event">30%</div>
+							<div class="card__event-subtitle">СКИДКА</div>
+						</div>
+						<div class="card__image">
+							<img src="img/image 3.png" alt="">
+						</div>
+					</div>
+					<div class="content__card card">
+						<div class="card-top">
+							<h2 class="card__title">Sushi sell</h2>
+							<div class="card__subtitle">Набор "Праздник"</div>
+						</div>
+						<div class="card__bottom">
+							<div class="card__event">45%</div>
+							<div class="card__event-subtitle">СКИДКА</div>
+						</div>
+						<div class="card__image">
+							<img src="img/image 4.png" alt="">
+						</div>
+					</div>
+					<div class="content__card card">
+						<div class="card-top">
+							<h2 class="card__title">Mangosteen</h2>
+							<div class="card__subtitle">Фрукт в подарок</div>
+						</div>
+						<div class="card__bottom">
+							<div class="card__event">J130</div>
+							<div class="card__event-subtitle">КУПОН</div>
+						</div>
+						<div class="card__image">
+							<img src="img/image 5.png" alt="">
+						</div>
+					</div>
+					<div class="content__card card">
+						<div class="card-top">
+							<h2 class="card__title">Теленок табака</h2>
+							<div class="card__subtitle">Стейк "Мачете"</div>
+						</div>
+						<div class="card__bottom">
+							<div class="card__event">20%</div>
+							<div class="card__event-subtitle">СКИДКА</div>
+						</div>
+						<div class="card__image">
+							<img src="img/image 6.png" alt="">
+						</div>
+					</div>
+					<div class="content__card card">
+						<div class="card-top">
+							<h2 class="card__title">Fire food</h2>
+							<div class="card__subtitle">Вторая шаурма в подарок</div>
+						</div>
+						<div class="card__bottom">
+							<div class="card__event">ОГОНЬ</div>
+							<div class="card__event-subtitle">ПРОМОКОД</div>
+						</div>
+						<div class="card__image">
+							<img src="img/image 7.png" alt="">
+						</div>
+					</div>
+					<div class="content__card card">
+						<div class="card-top">
+							<h2 class="card__title">Aroma cremeria</h2>
+							<div class="card__subtitle">Джелато "Пармезан"</div>
+						</div>
+						<div class="card__bottom">
+							<div class="card__event">20%</div>
+							<div class="card__event-subtitle">СКИДКА</div>
+						</div>
+						<div class="card__image">
+							<img src="img/image 8.png" alt="">
+						</div>
+					</div>
+					<div class="content__card card">
+						<div class="card-top">
+							<h2 class="card__title">Пробка на мира</h2>
+							<div class="card__subtitle">Вечер на двоих</div>
+						</div>
+						<div class="card__bottom">
+							<div class="card__event">J130</div>
+							<div class="card__event-subtitle">КУПОН</div>
+						</div>
+						<div class="card__image">
+							<img src="img/image_1.png" alt="">
+						</div>
+					</div>
+					<div class="content__card card">
+						<div class="card-top">
+							<h2 class="card__title">Кино и немцы</h2>
+							<div class="card__subtitle">Бесплатный бокал пива</div>
+						</div>
+						<div class="card__bottom">
+							<div class="card__event">ВАРВАР</div>
+							<div class="card__event-subtitle">ПРОМОКОД</div>
+						</div>
+						<div class="card__image">
+							<img src="img/image 2.png" alt="">
+						</div>
+					</div>
+					<div class="content__card card">
+						<div class="card-top">
+							<h2 class="card__title">Valery cakes</h2>
+							<div class="card__subtitle">Торт</div>
+						</div>
+						<div class="card__bottom">
+							<div class="card__event">30%</div>
+							<div class="card__event-subtitle">СКИДКА</div>
+						</div>
+						<div class="card__image">
+							<img src="img/image 3.png" alt="">
+						</div>
+					</div>
+					<div class="content__card card">
+						<div class="card-top">
+							<h2 class="card__title">Sushi sell</h2>
+							<div class="card__subtitle">Набор "Праздник"</div>
+						</div>
+						<div class="card__bottom">
+							<div class="card__event">45%</div>
+							<div class="card__event-subtitle">СКИДКА</div>
+						</div>
+						<div class="card__image">
+							<img src="img/image 4.png" alt="">
+						</div>
+					</div>
+				</section>
+			</main>
+
+		</div>
+	</div>
+<script src="js/script.js"></script></body>
+
+</html>
