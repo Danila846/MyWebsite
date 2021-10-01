@@ -9,7 +9,9 @@
 	<link rel="stylesheet" href="css/contacts-style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<link rel="shortcut icon" href="">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
 	<script src="js/c-script.js"></script>
+	<script src="js/form-script.js" defer></script>
 </head>
 
 <body>
@@ -39,6 +41,13 @@
 	<div class="container">
 		<div class="form">
 			<form action="" class="form__body" id="form">
+
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Site Name">
+				<input type="hidden" name="admin_email" value="danilam846@gmail.com">
+				<input type="hidden" name="form_subject" value="Form Subject">
+				<!-- END Hidden Required Fields -->
+
 				<h2 class="form__title">Contact me</h2>
 				<div class="form__flex">
 					<div class="form__item">
@@ -62,7 +71,7 @@
 					<label for="formMessage" class="form__label label-file">Attach image:</label>
 					<div class="file">
 						<div class="file__item">
-							<input accept=".jpeg, .png, .gif" type="file" id="formFile" name="file" class="file__input">
+							<input accept=".jpeg, .png, .gif" type="file" id="formFile" name="image" class="file__input">
 							<div class="file__button">Choose</div>
 						</div>
 						<div id="formPreview" class="file__preview"></div>

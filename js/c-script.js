@@ -12,25 +12,25 @@ document.addEventListener('DOMContentLoaded', function () {
 		let formData = new FormData(form);
 		formData.append('image', formFile.files[0]);
 
-		if (error === 0) {
-			form.classList.add('_sending');
-			let response = await fetch('sendmail.php', {
-				method: 'POST',
-				body: formData
-			});
-			if (response.ok) {
-				let result = await response.json();
-				alert(result.message);
-				formPreview.innerHTML = '';
-				form.reset();
-				form.classList.remove('_sending');
-			} else {
-				alert('Error');
-				form.classList.remove('_sending');
-			}
-		} else {
-			alert('Fill these fields with \'*\'');
-		}
+		// if (error === 0) {
+		// 	form.classList.add('_sending');
+		// let response = await fetch('sendmail.php', {
+		// 	method: 'POST',
+		// 	body: formData
+		// });
+		// if (response.ok) {
+		// 	let result = await response.json();
+		// 	alert(result.message);
+		// 	formPreview.innerHTML = '';
+		// 	form.reset();
+		// 	form.classList.remove('_sending');
+		// } else {
+		// 	alert('Error');
+		// 	form.classList.remove('_sending');
+		// }
+		// } else {
+		// 	alert('Fill these fields with \'*\'');
+		// }
 	}
 
 	function formValidate(form) {
