@@ -11,9 +11,9 @@
 	$mail->IsHTML(true);
 
 	//From
-	$mail->setFrom('mySite846@gmail.com', 'From my site');
+	$mail->setFrom('danilam846@gmail.com', 'From my site');
 	//To
-	$mail->addAddress('Danilam846@gmail.com');
+	$mail->addAddress('danilam846@gmail.com');
 	//Theme
 	$mail->Subject = 'New message from my site';
 
