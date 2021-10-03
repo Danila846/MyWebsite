@@ -40,9 +40,9 @@
 	.header {
 		padding: 14px;
 		height: 100%;
-		left: 100%;
 		transition: all 0.7s ease 0s;
 		overflow: auto;
+		clip-path: circle(30px at calc(100% - 60px) calc(100% - 80px));
 		&__list {
 			opacity: 0;
 			display: none;
@@ -118,6 +118,6 @@
 	}
 	.header.active__burger {
 		background-color: hsla(0, 0%, 19%, 0.9);
-		left: 0;
+		clip-path: circle(1000px at calc(100% - 60px) calc(100% - 80px));
 	}
 }

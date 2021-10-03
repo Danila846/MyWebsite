@@ -177,9 +177,10 @@ html::-webkit-scrollbar-thumb:hover {
   .header {
     padding: 14px;
     height: 100%;
-    left: 100%;
     transition: all 0.7s ease 0s;
     overflow: auto;
+    -webkit-clip-path: circle(30px at calc(100% - 60px) calc(100% - 80px));
+            clip-path: circle(30px at calc(100% - 60px) calc(100% - 80px));
   }
   .header__list {
     opacity: 0;
@@ -249,7 +250,8 @@ html::-webkit-scrollbar-thumb:hover {
   }
   .header.active__burger {
     background-color: rgba(48, 48, 48, 0.9);
-    left: 0;
+    -webkit-clip-path: circle(1000px at calc(100% - 60px) calc(100% - 80px));
+            clip-path: circle(1000px at calc(100% - 60px) calc(100% - 80px));
   }
 }
 .footer {
