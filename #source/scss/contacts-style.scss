@@ -81,7 +81,7 @@ html::-webkit-scrollbar-track {
 
 //<MAIN PART>================================================================================================================================================================================
 .form {
-	margin: 140px auto;
+	margin: 120px auto;
 	// 	// background-color: rgb(110, 110, 110);
 	// 	color: rgb(197, 197, 197);
 	// 	text-shadow: 1px 1px 1px rgb(136, 136, 136);
@@ -90,14 +90,25 @@ html::-webkit-scrollbar-track {
 	// 	overflow: hidden;
 	// 	box-shadow: 1px 1px 10px -4px #000;
 	// 	padding: 30px 50px;
+	@media (max-width: $bp1) {
+		margin: 80px auto 40px;
+	}
 	@media (max-width: $bp2) {
 		margin: 0px auto 0px;
 		min-width: 400px;
-		padding: 30px 20px;
+		padding: 0px 20px;
 	}
 	// 	.attention {
 	// 		font-size: 30px;
 	// 	}
+}
+h2 {
+	text-align: center;
+	font-size: 30px;
+	margin: 0px 0px 50px 0px;
+	color: rgb(78, 78, 78);
+	text-shadow: 1px 1px 3px rgb(117, 117, 117);
+	font-weight: 600;
 }
 .contact-blocks {
 	display: flex;
@@ -106,6 +117,9 @@ html::-webkit-scrollbar-track {
 	@media (max-width: $bp1) {
 		flex-direction: column;
 	}
+}
+.contact-blocks a {
+	color: black;
 }
 .contact-blocks-two {
 	width: 50%;
@@ -126,6 +140,11 @@ html::-webkit-scrollbar-track {
 	height: 200px;
 	width: 200px;
 	margin: 0px 0px 40px 0px;
+	box-shadow: 1px 1px 8px 2px rgb(49, 49, 49);
+	@media (max-width: $bp2) {
+		height: 300px;
+		width: 300px;
+	}
 }
 .contact-block svg {
 	position: absolute;
@@ -133,15 +152,38 @@ html::-webkit-scrollbar-track {
 	top: 20px;
 	left: 50%;
 	transform: translate3d(-50%, 0, 0);
+	@media (max-width: $bp2) {
+		width: 140px;
+	}
 }
-.contact-block__info {
+.contact-block__info a {
+	display: inline-block;
 	width: 160px;
 	padding: 10px 0;
 	margin: 140px 20px 20px;
-	background-color: #fff;
+	background-color: hsl(0, 0%, 82%);
+	box-shadow: 0px 0px 2px 1px rgb(49, 49, 49);
 	font-family: "Charm", cursive;
 	text-align: center;
 	font-size: 16px;
+	@media (max-width: $bp2) {
+		margin-top: 200px;
+		padding: 20px 0;
+		width: 260px;
+		font-size: 24px;
+	}
+}
+.contact-block__info a:active {
+	box-shadow: 0px 0px 4px 0px rgb(49, 49, 49);
+	margin: 141px 21px 20px;
+	padding: 9px 0;
+	width: 158px;
+	@media (max-width: $bp2) {
+		margin-top: 201px;
+		padding: 19px 0;
+		width: 258px;
+		font-size: 24px;
+	}
 }
 
 //===============================================================================================================================================================================================
