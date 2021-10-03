@@ -182,7 +182,7 @@ html::-webkit-scrollbar-thumb:hover {
   .header {
     padding: 14px;
     height: 100%;
-    background-color: rgba(48, 48, 48, 0);
+    left: 100%;
     transition: all 0.7s ease 0s;
     overflow: auto;
   }
@@ -208,7 +208,7 @@ html::-webkit-scrollbar-thumb:hover {
   .header__burger {
     background-color: rgba(48, 48, 48, 0.69);
     display: block;
-    position: absolute;
+    position: fixed;
     border-radius: 50%;
     overflow: hidden;
     width: 60px;
@@ -254,6 +254,7 @@ html::-webkit-scrollbar-thumb:hover {
   }
   .header.active__burger {
     background-color: rgba(48, 48, 48, 0.9);
+    left: 0;
   }
 }
 .footer {
