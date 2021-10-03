@@ -102,7 +102,7 @@ body {
 }
 @media (max-width: 864px) {
   body {
-    padding: 90px 0px 100px;
+    padding: 30px 0px 100px;
   }
 }
 
@@ -141,8 +141,7 @@ html::-webkit-scrollbar-track {
   position: fixed;
   top: 0;
   left: 0;
-  color: #fff;
-  background-color: rgba(48, 48, 48, 0.691);
+  background-color: rgba(48, 48, 48, 0.69);
   width: 100%;
   height: 70px;
   padding: 25px;
@@ -156,67 +155,109 @@ html::-webkit-scrollbar-track {
   justify-content: space-around;
 }
 .header__link {
-  border: 1px solid white;
+  border: 1px solid #d1d1d1;
   border-radius: 10px;
   padding: 10px 20px;
   font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  color: white;
+  color: #d1d1d1;
+  transition: all 0.3s ease 0s;
 }
 .header__list li a:hover {
-  background-color: rgba(255, 255, 255, 0.628);
+  background-color: #d1d1d1;
 }
 .header__list li a:hover {
-  color: #000;
+  color: #4e4e4e;
 }
 
 @media (max-width: 864px) {
+  body.lock {
+    overflow: hidden;
+  }
+
   .header {
     padding: 14px;
-    height: 50px;
+    height: 100%;
+    background-color: rgba(48, 48, 48, 0);
+    transition: all 0.7s ease 0s;
+    overflow: auto;
   }
   .header__list {
+    opacity: 0;
     display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16vh;
+    transition: all 0.5s ease 0s;
+  }
+  .header__list li {
+    margin: 0px 0px 60px 0px;
+  }
+  .header__list.active__burger {
+    opacity: 1;
+    display: flex;
+  }
+  .header__link {
+    font-size: 30px;
   }
   .header__burger {
-    display: inline-block;
-    position: relative;
-    width: 30px;
-    height: 20px;
+    background-color: rgba(48, 48, 48, 0.69);
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    bottom: 50px;
+    right: 30px;
   }
   .header__burger:before, .header__burger:after {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 40px;
     height: 2px;
-    left: 0;
-    background-color: #fff;
+    left: 10px;
+    background-color: #d1d1d1;
+    transition: all 0.7s ease 0s;
   }
   .header__burger:before {
-    top: 0;
+    top: 35%;
   }
   .header__burger:after {
-    bottom: 0;
+    bottom: 35%;
   }
   .header__burger span {
     position: absolute;
-    width: 100%;
+    width: 40px;
     height: 2px;
-    background-color: #fff;
-    top: 9px;
-    left: 0;
+    background-color: #d1d1d1;
+    top: calc(50% - 1px);
+    left: 10px;
+    transition: all 0.7s ease 0.3s;
   }
-  .header__menu {
-    display: grid;
-    justify-items: end;
+  .header__burger.active__burger:before {
+    transform: rotate(45deg);
+    top: calc(50% - 1px);
+  }
+  .header__burger.active__burger:after {
+    transform: rotate(-45deg);
+    bottom: calc(50% - 1px);
+  }
+  .header__burger.active__burger span {
+    transform: scale(0);
+    transition: all 0.5s ease 0s;
+  }
+  .header.active__burger {
+    background-color: rgba(48, 48, 48, 0.9);
   }
 }
 .footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  color: #fff;
+  color: #d1d1d1;
   background-color: #616161;
   width: 100%;
   height: 70px;
@@ -236,11 +277,13 @@ html::-webkit-scrollbar-track {
 }
 
 .form {
-  margin: 120px auto;
+  margin: 40vh auto 0;
+  transform: translate3d(0, -50%, 0);
 }
 @media (max-width: 1270px) {
   .form {
     margin: 80px auto 40px;
+    transform: translate3d(0, 0, 0);
   }
 }
 @media (max-width: 864px) {
@@ -256,8 +299,13 @@ h2 {
   font-size: 30px;
   margin: 0px 0px 50px 0px;
   color: #4e4e4e;
-  text-shadow: 1px 1px 3px #757575;
+  text-shadow: 1px 1px 2px #757575;
   font-weight: 600;
+}
+@media (max-width: 864px) {
+  h2 {
+    font-size: 40px;
+  }
 }
 
 .contact-blocks {
@@ -314,11 +362,28 @@ h2 {
   top: 20px;
   left: 50%;
   transform: translate3d(-50%, 0, 0);
+  transition: all 0.3s ease 0s;
 }
 @media (max-width: 864px) {
   .contact-block svg {
     width: 140px;
   }
+}
+
+.first .contact-block svg {
+  stroke: #333333;
+}
+
+.second .contact-block svg {
+  fill: #333333;
+}
+
+.first .contact-block:hover svg {
+  stroke: #1a1a1a;
+}
+
+.second .contact-block:hover svg {
+  fill: #1a1a1a;
 }
 
 .contact-block__info a {
@@ -331,6 +396,7 @@ h2 {
   font-family: "Charm", cursive;
   text-align: center;
   font-size: 16px;
+  color: #333333;
 }
 @media (max-width: 864px) {
   .contact-block__info a {

@@ -36,11 +36,11 @@ $bp2: 864px;
 
 body {
 	position: relative;
-	padding: 100px;
+	padding: 30px;
 	background-color: hsla(0, 0%, 67%);
 	min-height: 100vh;
 	@media (max-width: $bp2) {
-		padding: 0px;
+		padding: 10px 0px 100px;
 	}
 }
 //</NULLSTYLE, GLOBAL PARAMETERS>==================================================================================================================================================================
@@ -56,7 +56,7 @@ html::-webkit-scrollbar-thumb:hover {
 	background-color: hsl(0, 0%, 100%);
 }
 ::-webkit-scrollbar-track {
-	background-color: hsl(0, 32%, 15%);
+	background-color: hsl(0, 0%, 33%);
 }
 //</SCROLLBAR>====================================================================================================================================================================================
 
@@ -83,14 +83,52 @@ html::-webkit-scrollbar-thumb:hover {
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>==============================================================================================================================================
 
 //<MAIN PART>================================================================================================================================================================================
+.text {
+	font-size: 25px;
+	background-color: rgb(110, 110, 110);
+	padding: 50px;
+	border-radius: 30px;
+	box-shadow: 0px 0px 8px 2px rgb(49, 49, 49);
+	color: rgb(197, 197, 197);
+	text-shadow: 1px 1px 1px rgb(136, 136, 136);
+	text-align: justify;
+	margin: 100px 0px;
+	@media (max-width: $bp1) {
+		padding: 50px;
+	}
+	@media (max-width: $bp2) {
+		margin: 0px;
+		min-width: 400px;
+		padding: 10px;
+	}
+}
+
+.flex-about {
+	display: flex;
+	// justify-content: space-between;
+	align-items: center;
+	margin: 20px 0px 100px 0px;
+	@media (max-width: $bp1) {
+		// justify-content: center;
+		flex-direction: column;
+	}
+	@media (max-width: $bp2) {
+		margin: 20px 0px 50px 0px;
+	}
+}
 .image {
-	min-width: 400px;
 	position: relative;
+	min-width: 400px;
 	height: 400px;
 	border-radius: 50%;
 	overflow: hidden;
 	margin: 0px 50px 0px 0px;
 	box-shadow: 1px 1px 10px 0px rgb(170, 170, 170);
+	@media (max-width: $bp1) {
+		min-width: 350px;
+		height: 350px;
+		margin: 0;
+	}
 }
 .image img {
 	opacity: 0.7;
@@ -103,55 +141,40 @@ html::-webkit-scrollbar-thumb:hover {
 	object-position: top;
 	@include anim(1s, 0s);
 }
-// .image img {
-// 	opacity: 0.7;
-// 	margin: 0 auto;
-// 	width: 100%;
-// }
-.flex-about {
-	display: flex;
-	// justify-content: space-between;
-	align-items: center;
-	margin: 20px 0px 60px 0px;
-}
-.flex-about p {
+h2 {
 	text-shadow: 1px 1px 3px #000;
 	font-style: italic;
 	color: rgb(221, 221, 221);
 	font-family: "Charm", cursive;
 	font-size: 60px;
 	text-align: center;
+	@media (max-width: $bp1) {
+		margin-top: 50px;
+		font-size: 48px;
+	}
+	@media (max-width: $bp2) {
+		margin-top: 50px;
+		font-size: 40px;
+	}
 }
 //===============================================================================================================================================================================================
-.text {
-	font-size: 25px;
-	background-color: rgb(110, 110, 110);
-	padding: 50px;
-	border-radius: 30px;
-	box-shadow: 0px 0px 8px 2px rgb(49, 49, 49);
-	color: rgb(197, 197, 197);
-	text-shadow: 1px 1px 1px rgb(136, 136, 136);
-	text-align: justify;
-	margin: 0px 0px;
-}
+
 .text p {
 	font-size: 25px;
 	// background-color: rgb(85, 85, 85);
 	text-shadow: 1px 1px 1px rgb(136, 136, 136);
 	margin-bottom: 20px;
+	line-height: 30px;
+	@media (max-width: $bp2) {
+		line-height: 25px;
+		font-size: 20px;
+	}
 }
 .text p a {
 	color: rgb(197, 197, 197);
 	text-decoration: underline;
 }
-.flex-about p {
-	text-shadow: 1px 1px 3px #000;
-	font-style: italic;
-	color: rgb(221, 221, 221);
-	font-family: "Charm", cursive;
-	font-size: 60px;
-	text-align: center;
-}
+
 //===============================================================================================================================================================================================
 
 //</MAIN PART>===============================================================================================================================================================================

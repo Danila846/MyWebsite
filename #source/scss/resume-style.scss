@@ -34,7 +34,7 @@ body {
 	padding: 30px;
 	background-color: hsla(0, 0%, 67%);
 	@media (max-width: $bp2) {
-		padding: 90px 0px 100px;
+		padding: 10px 0px 100px;
 	}
 }
 //</NULLSTYLE, GLOBAL PARAMETERS>==================================================================================================================================================================
@@ -243,7 +243,7 @@ html::-webkit-scrollbar-thumb:hover {
 //<RIGHT SIDE>===============================================================================================================================================================================================
 .resume {
 	&__right-side {
-		background-color: #fff;
+		background-color: hsla(0, 0%, 100%, 0.8);
 		padding: 100px 80px 50px 50px;
 		@media (max-width: $bp1) {
 			padding: 60px 40px 50px 40px;

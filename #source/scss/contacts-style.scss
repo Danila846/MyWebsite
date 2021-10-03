@@ -37,7 +37,7 @@ body {
 	background-color: hsla(0, 0%, 67%);
 	min-height: 100vh;
 	@media (max-width: $bp2) {
-		padding: 90px 0px 100px;
+		padding: 30px 0px 100px;
 	}
 }
 //</NULLSTYLE, GLOBAL PARAMETERS>==================================================================================================================================================================
@@ -81,7 +81,8 @@ html::-webkit-scrollbar-track {
 
 //<MAIN PART>================================================================================================================================================================================
 .form {
-	margin: 120px auto;
+	margin: 40vh auto 0;
+	transform: translate3d(0, -50%, 0);
 	// 	// background-color: rgb(110, 110, 110);
 	// 	color: rgb(197, 197, 197);
 	// 	text-shadow: 1px 1px 1px rgb(136, 136, 136);
@@ -92,6 +93,7 @@ html::-webkit-scrollbar-track {
 	// 	padding: 30px 50px;
 	@media (max-width: $bp1) {
 		margin: 80px auto 40px;
+		transform: translate3d(0, 0, 0);
 	}
 	@media (max-width: $bp2) {
 		margin: 0px auto 0px;
@@ -107,8 +109,11 @@ h2 {
 	font-size: 30px;
 	margin: 0px 0px 50px 0px;
 	color: rgb(78, 78, 78);
-	text-shadow: 1px 1px 3px rgb(117, 117, 117);
+	text-shadow: 1px 1px 2px rgb(117, 117, 117);
 	font-weight: 600;
+	@media (max-width: $bp2) {
+		font-size: 40px;
+	}
 }
 .contact-blocks {
 	display: flex;
@@ -152,9 +157,22 @@ h2 {
 	top: 20px;
 	left: 50%;
 	transform: translate3d(-50%, 0, 0);
+	transition: all 0.3s ease 0s;
 	@media (max-width: $bp2) {
 		width: 140px;
 	}
+}
+.first .contact-block svg {
+	stroke: hsl(0, 0%, 20%);
+}
+.second .contact-block svg {
+	fill: hsl(0, 0%, 20%);
+}
+.first .contact-block:hover svg {
+	stroke: hsl(0, 0%, 10%);
+}
+.second .contact-block:hover svg {
+	fill: hsl(0, 0%, 10%);
 }
 .contact-block__info a {
 	display: inline-block;
@@ -166,6 +184,7 @@ h2 {
 	font-family: "Charm", cursive;
 	text-align: center;
 	font-size: 16px;
+	color: rgb(51, 51, 51);
 	@media (max-width: $bp2) {
 		margin-top: 200px;
 		padding: 20px 0;

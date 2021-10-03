@@ -33,6 +33,13 @@ body {
 	position: relative;
 	padding: 30px;
 	background-color: hsla(0, 0%, 67%);
+	@media (max-width: $bp2) {
+		padding: 30px 0px 100px;
+	}
+}
+h2 {
+	color: rgb(78, 78, 78);
+	text-shadow: 1px 1px 2px rgb(117, 117, 117);
 }
 //</NULLSTYLE, GLOBAL PARAMETERS>==================================================================================================================================================================
 
@@ -130,6 +137,7 @@ html::-webkit-scrollbar-thumb:hover {
 	font-weight: 600;
 	font-size: 24px;
 	margin: 0px 0px 8px 0px;
+	color: #fff;
 }
 
 .user-info ul {
@@ -211,12 +219,8 @@ html::-webkit-scrollbar-thumb:hover {
 	}
 }
 @media (max-width: $bp2) {
-	body {
-		padding: 0px;
-	}
 	.grid-items {
 		margin: 40px auto 0px;
-		padding: 0px 0px 100px 0px;
 
 		grid-gap: 50px 5px;
 	}
@@ -225,7 +229,7 @@ html::-webkit-scrollbar-thumb:hover {
 	}
 	.card {
 		max-width: 400px;
-		margin: 100px 0px 80px 0px;
+		margin: 0px 0px 0px 0px;
 		transform: translate3d(0, 0, 0);
 	}
 	.avatar {
