@@ -183,20 +183,24 @@ html::-webkit-scrollbar-thumb:hover {
     padding: 14px;
     height: 100%;
     left: 100%;
-    transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0.3s;
     overflow: auto;
   }
   .header__list {
     opacity: 0;
-    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 16vh;
-    transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0.3s;
   }
   .header__list li {
     margin: 0px 0px 60px 0px;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+  }
+  .header__list li.fade {
+    opacity: 1;
   }
   .header__list.active__burger {
     opacity: 1;
@@ -255,6 +259,7 @@ html::-webkit-scrollbar-thumb:hover {
   .header.active__burger {
     background-color: rgba(48, 48, 48, 0.9);
     left: 0;
+    transition: all 0.7s ease 0s;
   }
 }
 .footer {
