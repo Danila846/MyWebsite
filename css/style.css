@@ -224,33 +224,33 @@ html::-webkit-scrollbar-thumb:hover {
     content: "";
     position: absolute;
     width: 40px;
-    height: 2px;
+    height: 4px;
     left: 10px;
     background-color: #d1d1d1;
     transition: all 0.7s ease 0s;
   }
   .header__burger:before {
-    top: 35%;
+    top: 30%;
   }
   .header__burger:after {
-    bottom: 35%;
+    bottom: 30%;
   }
   .header__burger span {
     position: absolute;
     width: 40px;
-    height: 2px;
+    height: 4px;
     background-color: #d1d1d1;
-    top: calc(50% - 1px);
+    top: calc(50% - 2px);
     left: 10px;
     transition: all 0.7s ease 0.3s;
   }
   .header__burger.active__burger:before {
     transform: rotate(45deg);
-    top: calc(50% - 1px);
+    top: calc(50% - 2px);
   }
   .header__burger.active__burger:after {
     transform: rotate(-45deg);
-    bottom: calc(50% - 1px);
+    bottom: calc(50% - 2px);
   }
   .header__burger.active__burger span {
     transform: scale(0);
