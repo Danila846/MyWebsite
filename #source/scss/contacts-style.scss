@@ -6,6 +6,8 @@
 
 //<CONNECTING FONTS>==================================================================================================================================================================
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+//======
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap");
 //</CONNECTING FONTS>==================================================================================================================================================================
 
 //<DEFAULT FONT>==================================================================================================================================================================
@@ -31,17 +33,11 @@ $bp2: 864px;
 
 body {
 	position: relative;
-	padding: 100px;
-	background: #e9f6fd;
-	background: -moz-linear-gradient(top, #e9f6fd 0%, #6da9c5 100%);
-	background: -webkit-linear-gradient(top, #e9f6fd 0%, #5693af 100%);
-	background: linear-gradient(to bottom, #e9f6fd 0%, #59a1c2 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9f6fd', endColorstr='#d3eefb',GradientType=0 );
+	padding: 30px;
+	background-color: hsla(0, 0%, 67%);
 	min-height: 100vh;
 	@media (max-width: $bp2) {
-		padding: 0px;
-		min-height: 800px;
-		height: 100vh;
+		padding: 90px 0px 100px;
 	}
 }
 //</NULLSTYLE, GLOBAL PARAMETERS>==================================================================================================================================================================
@@ -85,180 +81,67 @@ html::-webkit-scrollbar-track {
 
 //<MAIN PART>================================================================================================================================================================================
 .form {
-	margin: 100px auto;
-	background-color: rgb(241, 249, 251);
-	color: #000;
-	border-radius: 20px;
-	border: 1px solid #5693af;
-	overflow: hidden;
-	box-shadow: 1px 1px 10px -4px #000;
-	padding: 30px 50px;
+	margin: 140px auto;
+	// 	// background-color: rgb(110, 110, 110);
+	// 	color: rgb(197, 197, 197);
+	// 	text-shadow: 1px 1px 1px rgb(136, 136, 136);
+	// 	border-radius: 20px;
+	// 	border: 1px solid #5693af;
+	// 	overflow: hidden;
+	// 	box-shadow: 1px 1px 10px -4px #000;
+	// 	padding: 30px 50px;
 	@media (max-width: $bp2) {
-		margin: 100px auto 50px;
+		margin: 0px auto 0px;
 		min-width: 400px;
 		padding: 30px 20px;
 	}
-	.attention {
-		font-size: 30px;
+	// 	.attention {
+	// 		font-size: 30px;
+	// 	}
+}
+.contact-blocks {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	@media (max-width: $bp1) {
+		flex-direction: column;
 	}
-	input {
-		border: 1px solid rgb(165, 165, 165);
-		border-radius: 10px;
-		height: 40px;
-		min-width: 100%;
-		padding: 0px 10px;
-		font-size: 20px;
-		&::placeholder {
-			color: rgb(175, 175, 175);
-		}
-		@media (max-width: $bp2) {
-			width: 358px;
-		}
-	}
-	textarea {
-		border: 1px solid rgb(165, 165, 165);
-		border-radius: 10px;
-		padding: 10px;
-		font-size: 16px;
+}
+.contact-blocks-two {
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	@media (max-width: $bp1) {
 		width: 100%;
-		min-height: 100px;
-		overflow: auto;
-		resize: none;
-		&::placeholder {
-			color: rgb(175, 175, 175);
-		}
-		&::-webkit-scrollbar {
-			width: 10px;
-		}
-		&::-webkit-scrollbar-thumb {
-			background-color: hsla(0, 0%, 0%, 0);
-		}
-		&::-webkit-scrollbar-track {
-			background-color: hsla(0, 0%, 0%, 0);
-		}
 	}
-
-	&__body {
-		font-size: 20px;
-		position: relative;
-	}
-	&__body::after {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: hsla(0, 0%, 100%, 0.801) url("../img/Spinner-3.gif") center / 50px no-repeat;
-		opacity: 0;
-		visibility: hidden;
-		transition: all 0.5s ease 0s;
-	}
-	&__body._sending::after {
-		opacity: 1;
-		visibility: visible;
-	}
-
-	&__title {
-		font-size: 30px;
-		text-align: center;
-		font-weight: 600;
-		text-transform: uppercase;
-		margin: 0px 0px 30px 0px;
-	}
-
-	&__flex {
-		display: flex;
-		justify-content: space-between;
-		@media (max-width: $bp1) {
-			flex-direction: column;
-		}
-	}
-
-	&__item {
-		width: 100%;
-		margin: 0px 10px 20px 0px;
-	}
-	& .third {
-		margin: 0px 0px 20px 0px;
-	}
-
-	&__label {
-	}
-
-	&__input {
-	}
-	&__input:focus {
-		box-shadow: 0 0 15px rgb(149, 149, 149);
-	}
-	&__input._error {
-		box-shadow: 0 0 15px rgb(255, 0, 0);
-	}
-}
-.file {
-	&__item {
-	}
-
-	&__input {
-	}
-}
-.form {
-	&__item {
-	}
-
-	&__label {
-	}
-}
-.attach {
-}
-.label-file {
-}
-.file {
-	&__item {
-		position: relative;
-		width: 120px;
-		cursor: pointer;
-	}
-
-	&__input {
-		position: absolute;
-		top: 10px;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		opacity: 0;
-		font-size: 0;
-	}
-
-	&__button {
-		margin: 10px 0px 0px 0px;
-
-		display: inline-flex;
-		min-height: 40px;
-		border-radius: 10px;
-		justify-content: center;
+	@media (max-width: $bp2) {
+		flex-direction: column;
 		align-items: center;
-		padding: 0px 20px;
-		transition: all 0.18s ease-in-out;
-		border: 1px solid hsl(231, 62%, 57%);
-		color: hsl(231, 62%, 57%);
-	}
-
-	&__preview {
-		display: inline-block;
-		max-width: 100px;
-		padding: 10px 0px 0px 0px;
-	}
-	&__preview img {
-		max-width: 100%;
 	}
 }
-.checkbox {
-	&__input {
-	}
-
-	&__label {
-	}
+.contact-block {
+	position: relative;
+	display: inline-block;
+	background-color: rgb(110, 110, 110);
+	height: 200px;
+	width: 200px;
+	margin: 0px 0px 40px 0px;
+}
+.contact-block svg {
+	position: absolute;
+	width: 90px;
+	top: 20px;
+	left: 50%;
+	transform: translate3d(-50%, 0, 0);
+}
+.contact-block__info {
+	width: 160px;
+	padding: 10px 0;
+	margin: 140px 20px 20px;
+	background-color: #fff;
+	font-family: "Charm", cursive;
+	text-align: center;
+	font-size: 16px;
 }
 
 //===============================================================================================================================================================================================

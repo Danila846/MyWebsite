@@ -96,9 +96,7 @@ h6 {
 body {
   position: relative;
   padding: 30px;
-  background: #e9f6fd;
-  background: linear-gradient(to bottom, #e9f6fd 0%, #59a1c2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#e9f6fd", endColorstr="#d3eefb",GradientType=0 );
+  background-color: #ababab;
 }
 
 html::-webkit-scrollbar {
@@ -249,14 +247,15 @@ html::-webkit-scrollbar-thumb:hover {
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.253);
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.246);
   /* background-color: hsl(24, 68%, 64%); */
   /* grid-template: auto 1fr minmax(40px, auto) / 1fr; */
 }
 
 .card {
-  background-color: #14262e;
+  background-color: rgba(60, 62, 62, 0.691);
   border-radius: 20px;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(65, 76, 119, 0.438), 0 15px 40px rgba(0, 0, 0, 0.226);
   display: flex;
   padding: 30px;
   width: 520px;
@@ -265,7 +264,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 .avatar {
-  border: 10px solid #686878;
+  border: 10px solid #282829;
   border-radius: 50%;
   height: 150px;
   width: 150px;
@@ -310,7 +309,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 .repo {
-  background-color: #686878;
+  background-color: #282829;
   border-radius: 5px;
   display: inline-block;
   color: white;
@@ -361,7 +360,7 @@ html::-webkit-scrollbar-thumb:hover {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
-  color: #000;
+  color: #454545;
 }
 
 @media (max-width: 1270px) {

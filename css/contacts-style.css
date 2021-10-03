@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap");
 /*Обнуление*/
 * {
   padding: 0;
@@ -95,17 +96,13 @@ h6 {
 /*--------------------*/
 body {
   position: relative;
-  padding: 100px;
-  background: #e9f6fd;
-  background: linear-gradient(to bottom, #e9f6fd 0%, #59a1c2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#e9f6fd", endColorstr="#d3eefb",GradientType=0 );
+  padding: 30px;
+  background-color: #ababab;
   min-height: 100vh;
 }
 @media (max-width: 864px) {
   body {
-    padding: 0px;
-    min-height: 800px;
-    height: 100vh;
+    padding: 90px 0px 100px;
   }
 }
 
@@ -239,146 +236,69 @@ html::-webkit-scrollbar-track {
 }
 
 .form {
-  margin: 100px auto;
-  background-color: #f1f9fb;
-  color: #000;
-  border-radius: 20px;
-  border: 1px solid #5693af;
-  overflow: hidden;
-  box-shadow: 1px 1px 10px -4px #000;
-  padding: 30px 50px;
+  margin: 140px auto;
 }
 @media (max-width: 864px) {
   .form {
-    margin: 100px auto 50px;
+    margin: 0px auto 0px;
     min-width: 400px;
     padding: 30px 20px;
   }
 }
-.form .attention {
-  font-size: 30px;
-}
-.form input {
-  border: 1px solid #a5a5a5;
-  border-radius: 10px;
-  height: 40px;
-  min-width: 100%;
-  padding: 0px 10px;
-  font-size: 20px;
-}
-.form input::placeholder {
-  color: #afafaf;
-}
-@media (max-width: 864px) {
-  .form input {
-    width: 358px;
-  }
-}
-.form textarea {
-  border: 1px solid #a5a5a5;
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 16px;
-  width: 100%;
-  min-height: 100px;
-  overflow: auto;
-  resize: none;
-}
-.form textarea::placeholder {
-  color: #afafaf;
-}
-.form textarea::-webkit-scrollbar {
-  width: 10px;
-}
-.form textarea::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0);
-}
-.form textarea::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0);
-}
-.form__body {
-  font-size: 20px;
-  position: relative;
-}
-.form__body::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.801) url("../img/Spinner-3.gif") center/50px no-repeat;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s ease 0s;
-}
-.form__body._sending::after {
-  opacity: 1;
-  visibility: visible;
-}
-.form__title {
-  font-size: 30px;
-  text-align: center;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin: 0px 0px 30px 0px;
-}
-.form__flex {
+
+.contact-blocks {
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 @media (max-width: 1270px) {
-  .form__flex {
+  .contact-blocks {
     flex-direction: column;
   }
 }
-.form__item {
-  width: 100%;
-  margin: 0px 10px 20px 0px;
+
+.contact-blocks-two {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
 }
-.form .third {
-  margin: 0px 0px 20px 0px;
+@media (max-width: 1270px) {
+  .contact-blocks-two {
+    width: 100%;
+  }
 }
-.form__input:focus {
-  box-shadow: 0 0 15px #959595;
-}
-.form__input._error {
-  box-shadow: 0 0 15px red;
+@media (max-width: 864px) {
+  .contact-blocks-two {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.file__item {
+.contact-block {
   position: relative;
-  width: 120px;
-  cursor: pointer;
-}
-.file__input {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  font-size: 0;
-}
-.file__button {
-  margin: 10px 0px 0px 0px;
-  display: inline-flex;
-  min-height: 40px;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 20px;
-  transition: all 0.18s ease-in-out;
-  border: 1px solid #4d62d5;
-  color: #4d62d5;
-}
-.file__preview {
   display: inline-block;
-  max-width: 100px;
-  padding: 10px 0px 0px 0px;
+  background-color: #6e6e6e;
+  height: 200px;
+  width: 200px;
+  margin: 0px 0px 40px 0px;
 }
-.file__preview img {
-  max-width: 100%;
+
+.contact-block svg {
+  position: absolute;
+  width: 90px;
+  top: 20px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+}
+
+.contact-block__info {
+  width: 160px;
+  padding: 10px 0;
+  margin: 140px 20px 20px;
+  background-color: #fff;
+  font-family: "Charm", cursive;
+  text-align: center;
+  font-size: 16px;
 }
 
 .checkbox {

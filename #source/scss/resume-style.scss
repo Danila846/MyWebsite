@@ -32,11 +32,7 @@ $bp2: 864px;
 body {
 	position: relative;
 	padding: 30px;
-	background: #e9f6fd;
-	background: -moz-linear-gradient(top, #e9f6fd 0%, #6da9c5 100%);
-	background: -webkit-linear-gradient(top, #e9f6fd 0%, #5693af 100%);
-	background: linear-gradient(to bottom, #e9f6fd 0%, #59a1c2 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9f6fd', endColorstr='#d3eefb',GradientType=0 );
+	background-color: hsla(0, 0%, 67%);
 	@media (max-width: $bp2) {
 		padding: 90px 0px 100px;
 	}
@@ -92,6 +88,7 @@ html::-webkit-scrollbar-thumb:hover {
 	}
 }
 .resume {
+	box-shadow: 0px 0px 8px 2px rgb(136, 136, 136);
 	border: 1px solid hsl(0, 0%, 56%);
 	border-radius: 10px;
 	overflow: hidden;

@@ -96,9 +96,7 @@ h6 {
 body {
   position: relative;
   padding: 30px;
-  background: #e9f6fd;
-  background: linear-gradient(to bottom, #e9f6fd 0%, #59a1c2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#e9f6fd", endColorstr="#d3eefb",GradientType=0 );
+  background-color: #ababab;
 }
 @media (max-width: 864px) {
   body {
@@ -249,6 +247,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 .resume {
+  box-shadow: 0px 0px 8px 2px #888888;
   border: 1px solid #8f8f8f;
   border-radius: 10px;
   overflow: hidden;

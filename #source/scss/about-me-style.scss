@@ -6,6 +6,11 @@
 
 //<CONNECTING FONTS>==================================================================================================================================================================
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+//=====
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 //</CONNECTING FONTS>==================================================================================================================================================================
 
 //<DEFAULT FONT>==================================================================================================================================================================
@@ -32,11 +37,7 @@ $bp2: 864px;
 body {
 	position: relative;
 	padding: 100px;
-	background: #e9f6fd;
-	background: -moz-linear-gradient(top, #e9f6fd 0%, #6da9c5 100%);
-	background: -webkit-linear-gradient(top, #e9f6fd 0%, #5693af 100%);
-	background: linear-gradient(to bottom, #e9f6fd 0%, #59a1c2 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9f6fd', endColorstr='#d3eefb',GradientType=0 );
+	background-color: hsla(0, 0%, 67%);
 	min-height: 100vh;
 	@media (max-width: $bp2) {
 		padding: 0px;
@@ -83,16 +84,74 @@ html::-webkit-scrollbar-thumb:hover {
 
 //<MAIN PART>================================================================================================================================================================================
 .image {
-	margin: 0 auto;
-	width: 400px;
-	margin-bottom: 30px;
+	min-width: 400px;
+	position: relative;
+	height: 400px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0px 50px 0px 0px;
+	box-shadow: 1px 1px 10px 0px rgb(170, 170, 170);
 }
 .image img {
-	margin: 0 auto;
-	width: 400px;
+	opacity: 0.7;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	object-position: top;
+	@include anim(1s, 0s);
+}
+// .image img {
+// 	opacity: 0.7;
+// 	margin: 0 auto;
+// 	width: 100%;
+// }
+.flex-about {
+	display: flex;
+	// justify-content: space-between;
+	align-items: center;
+	margin: 20px 0px 60px 0px;
+}
+.flex-about p {
+	text-shadow: 1px 1px 3px #000;
+	font-style: italic;
+	color: rgb(221, 221, 221);
+	font-family: "Charm", cursive;
+	font-size: 60px;
+	text-align: center;
 }
 //===============================================================================================================================================================================================
-
+.text {
+	font-size: 25px;
+	background-color: rgb(110, 110, 110);
+	padding: 50px;
+	border-radius: 30px;
+	box-shadow: 0px 0px 8px 2px rgb(49, 49, 49);
+	color: rgb(197, 197, 197);
+	text-shadow: 1px 1px 1px rgb(136, 136, 136);
+	text-align: justify;
+	margin: 0px 0px;
+}
+.text p {
+	font-size: 25px;
+	// background-color: rgb(85, 85, 85);
+	text-shadow: 1px 1px 1px rgb(136, 136, 136);
+	margin-bottom: 20px;
+}
+.text p a {
+	color: rgb(197, 197, 197);
+	text-decoration: underline;
+}
+.flex-about p {
+	text-shadow: 1px 1px 3px #000;
+	font-style: italic;
+	color: rgb(221, 221, 221);
+	font-family: "Charm", cursive;
+	font-size: 60px;
+	text-align: center;
+}
 //===============================================================================================================================================================================================
 
 //</MAIN PART>===============================================================================================================================================================================
