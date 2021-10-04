@@ -157,7 +157,7 @@ h2 {
 	top: 20px;
 	left: 50%;
 	transform: translate3d(-50%, 0, 0);
-	transition: all 0.3s ease 0s;
+	transition: all 0.5s ease 0s;
 	@media (max-width: $bp2) {
 		width: 140px;
 	}
@@ -170,9 +170,17 @@ h2 {
 }
 .first .contact-block:hover svg {
 	stroke: hsl(0, 0%, 10%);
+	transform: translateX(-45px) rotate(180deg);
+	@media (max-width: $bp2) {
+		transform: translateX(-70px) rotate(180deg);
+	}
 }
 .second .contact-block:hover svg {
 	fill: hsl(0, 0%, 10%);
+	transform: translateX(-45px) rotate(180deg);
+	@media (max-width: $bp2) {
+		transform: translateX(-70px) rotate(180deg);
+	}
 }
 .contact-block__info a {
 	display: inline-block;

@@ -285,7 +285,8 @@ html::-webkit-scrollbar-thumb:hover {
   }
 }
 
-.text {
+.about-me {
+  position: relative;
   font-size: 25px;
   background-color: #6e6e6e;
   padding: 50px;
@@ -297,35 +298,33 @@ html::-webkit-scrollbar-thumb:hover {
   margin: 100px 0px;
 }
 @media (max-width: 1270px) {
-  .text {
+  .about-me {
     padding: 50px;
   }
 }
 @media (max-width: 864px) {
-  .text {
+  .about-me {
     margin: 0px;
     min-width: 400px;
     padding: 10px;
   }
 }
-
-.flex-about {
+.about-me__header {
   display: flex;
   align-items: center;
   margin: 20px 0px 100px 0px;
 }
 @media (max-width: 1270px) {
-  .flex-about {
+  .about-me__header {
     flex-direction: column;
   }
 }
 @media (max-width: 864px) {
-  .flex-about {
+  .about-me__header {
     margin: 20px 0px 50px 0px;
   }
 }
-
-.image {
+.about-me__image {
   position: relative;
   min-width: 400px;
   height: 400px;
@@ -335,14 +334,13 @@ html::-webkit-scrollbar-thumb:hover {
   box-shadow: 1px 1px 10px 0px #aaaaaa;
 }
 @media (max-width: 1270px) {
-  .image {
+  .about-me__image {
     min-width: 350px;
     height: 350px;
     margin: 0;
   }
 }
-
-.image img {
+.about-me__image img {
   opacity: 0.7;
   position: absolute;
   width: 100%;
@@ -353,8 +351,7 @@ html::-webkit-scrollbar-thumb:hover {
   object-position: top;
   transition: all 1s ease 0s;
 }
-
-h2 {
+.about-me__title {
   text-shadow: 1px 1px 3px #000;
   font-style: italic;
   color: #dddddd;
@@ -363,32 +360,30 @@ h2 {
   text-align: center;
 }
 @media (max-width: 1270px) {
-  h2 {
+  .about-me__title {
     margin-top: 50px;
     font-size: 48px;
   }
 }
 @media (max-width: 864px) {
-  h2 {
+  .about-me__title {
     margin-top: 50px;
     font-size: 40px;
   }
 }
-
-.text p {
+.about-me__text p {
   font-size: 25px;
   text-shadow: 1px 1px 1px #888888;
   margin-bottom: 20px;
   line-height: 30px;
 }
 @media (max-width: 864px) {
-  .text p {
+  .about-me__text p {
     line-height: 25px;
     font-size: 20px;
   }
 }
-
-.text p a {
+.about-me__text p a {
   color: #c5c5c5;
   text-decoration: underline;
 }
