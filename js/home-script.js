@@ -1,6 +1,6 @@
 const toggleFirstEls = document.querySelectorAll('.toggle-mobile-first');
 const toggleSecondEls = document.querySelectorAll('.toggle-mobile-second');
-const link = document.querySelectorAll('a');
+const links = document.querySelectorAll('a');
 
 document.addEventListener('click', () => {
 	if (window.innerWidth <= 864) {
