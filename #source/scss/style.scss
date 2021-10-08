@@ -85,92 +85,7 @@ html::-webkit-scrollbar-thumb:hover {
 .label-hello:hover {
 	content: "about";
 }
-
-// .hide-text-block {
-// 	position: relative;
-// 	display: block;
-// 	overflow: hidden;
-// }
-
-// h1 {
-// 	font-family:'Semibold';
-// 	position: fixed;
-// 	line-height: 110%;
-// 	letter-spacing: -2px;
-//     font-size: 3.2em; /* general fallback */
-//     font-size: 18vm; /* IE9 fallback */
-// /*     font-size: 19vmin; */
-//     font-size: 18vmin;
-
-// }
-/* ------ Links ------ */
-// a, a:after, a:visited {
-// 	text-decoration: none;
-// 	cursor: pointer;
-// 	color: #000000;
-// }
-
-// a.text-color-white, a.text-color-white:after, a.text-color-white:visited {
-// 	color: #ffffff;
-// }
-
-// a.text-color-red, a.text-color-red:after, a.text-color-red:visited {
-// 	color: #ea0f1e;
-// }
-
-// /* ------ Hover states ------ */
-// .on-hover-40, .on-hover--40 {
-// 	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
-// }
-// .on-hover-40:hover {
-// 	margin-left: 40px;
-// 	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
-// }
-// .on-hover--40:hover {
-// 	margin-left: -40px;
-// 	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
-// }
-
-/* ------ Reading position ------ */
-// .rpi-progress-bar{
-// 	box-sizing:border-box;
-// 	position:fixed;
-// 	width:100%;
-// 	top:0;
-// 	left:0;
-// 	padding-bottom:20px;
-// 	z-index: 1;
-// }
-// .rpi-progress-bar__position{
-// 	box-sizing:inherit;
-// 	height:4px; /* control the height of the progress bar */
-// 	width:100%;
-// 	background-color: #D1001D;
-// 	-webkit-transform-origin:0 50%;
-// 	transform-origin:0 50%;
-// 	-webkit-transition:-webkit-transform 50ms;
-// 	transition:-webkit-transform 50ms;
-// 	transition:transform 50ms;
-// 	transition:transform 50ms,-webkit-transform 50ms;
-// 	-webkit-transform:scaleX(0);
-// 	transform:scaleX(0);
-// 	will-change:transform;
-// 	position:relative;
-// }
-
 // /*	=====================================================================
-// 									HOMEPAGE
-// 	===================================================================== */
-
-// .vertical-center {
-// 	position: absolute;
-// 	height: 100%;
-// 	display: -webkit-flex; /* Safari */
-// 	display: flex;
-// 	-webkit-align-items: center; /* Safari */
-// 	align-items:   center;
-// }
-
 .label-hello:after {
 	content: "Hello.";
 	transition: all 0.3s ease 0s;
@@ -269,32 +184,6 @@ html::-webkit-scrollbar-thumb:hover {
 	animation-delay: 1.2s;
 }
 
-// .animate {
-// 	-webkit-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
-// 	-moz-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
-// 	animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
-// 	-webkit-animation-fill-mode:backwards;
-// 	-moz-animation-fill-mode:backwards;
-// 	animation-fill-mode:backwards;
-// }
-
-// @-webkit-keyframes animate {
-// 	0% {opacity: 0;-webkit-transform: translateY(100%);}
-// 	100% {opacity: 1;-webkit-transform: translateY(0%);}
-// }
-
-// @keyframes animate {
-// 	0% {opacity: 0;transform: translateY(30vh);} /* WORK ON THISSS! */
-// /* 	0% {transform: translateY(100%);} */
-// 	100% {opacity: 1;transform: translateY(0%);}
-// }
-// h1 {
-// 	line-height: 150px;
-// 	font-size: 120px;
-// 	color: rgb(78, 78, 78);
-// 	text-shadow: 1px 1px 2px rgb(117, 117, 117);
-// 	font-weight: 600;
-// }
 h1 {
 	position: fixed;
 	top: 50%;
@@ -315,68 +204,9 @@ h1 {
 	}
 	@media (max-width: $bp2) {
 		font-size: 10vmin;
-		//min-width: 400px;
 		left: 20px;
 	}
 }
-// .home {
-// 	&__flex {
-// 		// min-height: 660px;
-// 		// height: 100vh;
-// 		// display: flex;
-// 		// justify-content: space-between;
-// 		// align-items: center;
-// 	}
-
-// 	&__title-links {
-// 		position: absolute;
-// 	}
-
-// 	&__titles {
-// 		position: absolute;
-// 		top: 50%;
-// 		cursor: pointer;
-// 		transform: translate3d(0, -50%, 0);
-// 	}
-
-// 	&__title {
-// 	}
-// 	&__title:hover {
-// 		opacity: 0;
-// 	}
-
-// 	&__links {
-// 		position: absolute;
-// 		top: 50%;
-// 		width: 1200px;
-// 		transform: translate3d(0, -50%, 0);
-// 	}
-
-// 	&__link {
-// 	}
-// 	&__link a {
-// 		opacity: 0;
-// 		line-height: 150px;
-// 		font-size: 120px;
-// 		color: rgb(78, 78, 78);
-// 		text-shadow: 1px 1px 2px rgb(117, 117, 117);
-// 		font-weight: 600;
-// 	}
-// 	&__link a:hover {
-// 		opacity: 1;
-// 	}
-// }
-// .git-hub {
-// }
-// .card {
-// }
-// .avatar {
-// }
-// .user-info {
-// }
-// .info {
-// }
-
 //===============================================================================================================================================================================================
 lottie-player {
 	opacity: 0.3;
@@ -387,77 +217,6 @@ lottie-player {
 	height: 100vh;
 	background-size: cover;
 }
-.git-hub {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-}
-.card {
-	background-color: hsla(180, 2%, 24%, 0.691);
-	border-radius: 20px;
-	box-shadow: 0 5px 10px rgba(65, 76, 119, 0.438), 0 15px 40px rgba(0, 0, 0, 0.226);
-	display: flex;
-	padding: 30px;
-	width: 520px;
-}
-
-.avatar {
-	border: 10px solid hsl(240, 1%, 16%);
-	border-radius: 50%;
-	height: 150px;
-	width: 150px;
-}
-
-.user-info {
-	color: #eee;
-	margin-left: 50px;
-}
-.user-info p {
-	color: #eee;
-	font-size: 14px;
-	font-weight: 600;
-	margin: 15px 0px 30px 0px;
-}
-
-.user-info h2 {
-	font-weight: 600;
-	font-size: 24px;
-	margin: 0px 0px 8px 0px;
-	color: #fff;
-}
-
-.user-info ul {
-	display: flex;
-	justify-content: space-between;
-	list-style-type: none;
-	padding: 0;
-	max-width: 400px;
-	margin: 0px 0px 20px 0px;
-}
-
-.user-info ul li {
-	display: flex;
-	align-items: center;
-	margin-right: 12px;
-}
-
-.user-info ul li strong {
-	font-size: 12px;
-	margin-left: 5px;
-}
-
-.repo {
-	background-color: hsl(240, 1%, 16%);
-	border-radius: 5px;
-	display: inline-block;
-	color: white;
-	font-size: 12px;
-	padding: 0.25rem 0.5rem;
-	margin-right: 7px;
-	margin-bottom: 5px;
-	text-decoration: none;
-}
-
 //===============================================================================================================================================================================================
 .hide-mobile {
 	display: none;
@@ -475,22 +234,15 @@ lottie-player {
 	.hide-title {
 		display: block;
 	}
-	// .hide-mobile {
-	// 	display: block;
-	// }
 	.tap-info {
 		display: block;
 		text-align: center;
-
 		font-family: "Medium";
-		color: #050505;
+		color: #7e0000;
 		position: fixed;
 		bottom: 4%;
 		left: 50%;
 		font-size: 3.6vmin;
-		// animation: bounce 1s infinite alternate;
-		// -webkit-animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite alternate;
-		// -moz-animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite alternate;
 		animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite alternate;
 	}
 	@keyframes bounce {
@@ -501,13 +253,5 @@ lottie-player {
 			transform: translate(-50%, -8px);
 		}
 	}
-	// @-webkit-keyframes bounce {
-	// 	from {
-	// 		transform: translateY(0px);
-	// 	}
-	// 	to {
-	// 		transform: translateY(-8px);
-	// 	}
-	// }
 }
 //</MAIN PART>===============================================================================================================================================================================

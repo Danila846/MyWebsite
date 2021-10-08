@@ -266,6 +266,7 @@ html::-webkit-scrollbar-thumb:hover {
     transform: scale(0);
     transition: all 0.5s ease 0s;
   }
+
   .header.active__burger {
     background-color: rgba(48, 48, 48, 0.9);
     left: 0;
@@ -305,7 +306,6 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 .image__project {
-  /* min-width: 100%; */
   position: relative;
   padding: 0px 0px 48% 0px;
   overflow: hidden;

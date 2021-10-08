@@ -251,6 +251,7 @@ html::-webkit-scrollbar-thumb:hover {
     transform: scale(0);
     transition: all 0.5s ease 0s;
   }
+
   .header.active__burger {
     background-color: rgba(48, 48, 48, 0.9);
     left: 0;
@@ -261,8 +262,6 @@ html::-webkit-scrollbar-thumb:hover {
   content: "about";
 }
 
-/* ------ Links ------ */
-/* ------ Reading position ------ */
 .label-hello:after {
   content: "Hello.";
   transition: all 0.3s ease 0s;
@@ -390,79 +389,6 @@ lottie-player {
   background-size: cover;
 }
 
-.git-hub {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-}
-
-.card {
-  background-color: rgba(60, 62, 62, 0.691);
-  border-radius: 20px;
-  box-shadow: 0 5px 10px rgba(65, 76, 119, 0.438), 0 15px 40px rgba(0, 0, 0, 0.226);
-  display: flex;
-  padding: 30px;
-  width: 520px;
-}
-
-.avatar {
-  border: 10px solid #282829;
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
-}
-
-.user-info {
-  color: #eee;
-  margin-left: 50px;
-}
-
-.user-info p {
-  color: #eee;
-  font-size: 14px;
-  font-weight: 600;
-  margin: 15px 0px 30px 0px;
-}
-
-.user-info h2 {
-  font-weight: 600;
-  font-size: 24px;
-  margin: 0px 0px 8px 0px;
-  color: #fff;
-}
-
-.user-info ul {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 0;
-  max-width: 400px;
-  margin: 0px 0px 20px 0px;
-}
-
-.user-info ul li {
-  display: flex;
-  align-items: center;
-  margin-right: 12px;
-}
-
-.user-info ul li strong {
-  font-size: 12px;
-  margin-left: 5px;
-}
-
-.repo {
-  background-color: #282829;
-  border-radius: 5px;
-  display: inline-block;
-  color: white;
-  font-size: 12px;
-  padding: 0.25rem 0.5rem;
-  margin-right: 7px;
-  margin-bottom: 5px;
-  text-decoration: none;
-}
-
 .hide-mobile {
   display: none;
 }
@@ -488,7 +414,7 @@ lottie-player {
     display: block;
     text-align: center;
     font-family: "Medium";
-    color: #050505;
+    color: #7e0000;
     position: fixed;
     bottom: 4%;
     left: 50%;

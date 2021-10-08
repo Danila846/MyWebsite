@@ -10,8 +10,6 @@
 	&__burger {
 		display: none;
 	}
-	&__menu {
-	}
 	&__list {
 		display: flex;
 		justify-content: space-around;
@@ -24,7 +22,7 @@
 		text-transform: uppercase;
 		text-decoration: none;
 		color: hsl(0, 0%, 82%);
-		transition: all 0.3s ease 0s;
+		@include anim(0.3s, 0s);
 	}
 	&__list li a:hover {
 		background-color: hsl(0, 0%, 82%);
@@ -41,7 +39,7 @@
 		padding: 14px;
 		height: 100%;
 		left: 100%;
-		transition: all 0.7s ease 0.3s;
+		@include anim(0.7s, 0.3s);
 
 		overflow: auto;
 		&__list {
@@ -50,11 +48,11 @@
 			align-items: center;
 			justify-content: center;
 			margin-top: 16vh;
-			transition: all 0.5s ease 0.3s;
+			@include anim(0.5s, 0.3s);
 			li {
 				margin: 0px 0px 60px 0px;
 				opacity: 0;
-				transition: all 0.5s ease 0s;
+				@include anim(0.5s, 0s);
 			}
 			li.fade {
 				opacity: 1;
@@ -77,7 +75,6 @@
 			height: 60px;
 			bottom: 50px;
 			right: 30px;
-
 			&:before,
 			&:after {
 				content: "";
@@ -86,7 +83,7 @@
 				height: 4px;
 				left: 10px;
 				background-color: hsl(0, 0%, 82%);
-				transition: all 0.7s ease 0s;
+				@include anim(0.7s, 0s);
 			}
 			&:before {
 				top: 30%;
@@ -101,7 +98,7 @@
 				background-color: hsl(0, 0%, 82%);
 				top: calc(50% - 2px);
 				left: 10px;
-				transition: all 0.7s ease 0.3s;
+				@include anim(0.7s, 0.3s);
 			}
 			&.active__burger {
 				&:before {
@@ -114,16 +111,14 @@
 				}
 				span {
 					@include scale(0);
-					transition: all 0.5s ease 0s;
+					@include anim(0.5s, 0s);
 				}
 			}
-		}
-		&__menu {
 		}
 	}
 	.header.active__burger {
 		background-color: hsla(0, 0%, 19%, 0.9);
 		left: 0;
-		transition: all 0.7s ease 0s;
+		@include anim(0.7s, 0s);
 	}
 }

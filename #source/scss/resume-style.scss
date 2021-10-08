@@ -77,9 +77,12 @@ html::-webkit-scrollbar-thumb:hover {
 
 //<MAIN PART>================================================================================================================================================================================
 .grid-container {
-	margin: 100px auto 0px;
+	margin: 80px auto 0px;
 	display: grid;
 	grid-template: 1fr / 300px minmax(400px, auto);
+	@media (max-width: $bp1) {
+		margin: 60px auto 0px;
+	}
 	@media (max-width: $bp2) {
 		grid-template: 1fr / 400px;
 		margin: 0px auto;
@@ -96,14 +99,14 @@ html::-webkit-scrollbar-thumb:hover {
 		left: -30px;
 		top: -5px;
 	}
-	h2 {
-		font-size: 20px;
-		font-weight: 600;
-		margin: 0px 0px 10px 0px;
-	}
 }
 
 //<LEFT SIDE>===============================================================================================================================================================================================
+.left-title {
+	font-size: 20px;
+	font-weight: 600;
+	margin: 0px 0px 10px 0px;
+}
 .resume {
 	&__left-side {
 		padding: 100px 10px 50px 40px;
@@ -151,7 +154,7 @@ html::-webkit-scrollbar-thumb:hover {
 		width: 40px;
 		top: -22px;
 		left: 50%;
-		transform: translate3d(-50%, 0, 0);
+		@include tr(-50%, 0, 0);
 	}
 
 	&__profession {
@@ -165,16 +168,10 @@ html::-webkit-scrollbar-thumb:hover {
 		margin: 0px 0px 30px 0px;
 	}
 
-	&__contacts-title {
-	}
-
 	&__contacts-number {
 		position: relative;
 		margin: 0px 0px 6px 0px;
 		font-size: 16px;
-	}
-
-	&__contacts-image {
 	}
 
 	&__contacts-email {
@@ -186,12 +183,11 @@ html::-webkit-scrollbar-thumb:hover {
 		margin: 0px 0px 30px 0px;
 	}
 
-	&__links-title {
-	}
-
 	&__link-github {
 		position: relative;
 		font-size: 16px;
+		margin: 0px 0px 10px 0px;
+		line-height: 18px;
 	}
 	&__link-github a {
 		color: #000;
@@ -200,12 +196,6 @@ html::-webkit-scrollbar-thumb:hover {
 	&__details {
 		margin: 0px 0px 30px 0px;
 	}
-
-	&__details-title {
-	}
-
-	&__details-list {
-	}
 	&__details-list li {
 		margin: 0px 0px 10px 0px;
 		font-size: 16px;
@@ -213,15 +203,6 @@ html::-webkit-scrollbar-thumb:hover {
 	&__details-list li p:first-child {
 		text-decoration: underline;
 		margin: 0px 0px 3px 0px;
-	}
-
-	&__skills {
-	}
-
-	&__skills-title {
-	}
-
-	&__skills-list {
 	}
 	&__skills-list li {
 		position: relative;
@@ -243,24 +224,77 @@ html::-webkit-scrollbar-thumb:hover {
 .resume {
 	&__right-side {
 		background-color: hsla(0, 0%, 100%, 0.8);
-		padding: 100px 80px 50px 50px;
+		padding: 100px 80px 50px 80px;
 		@media (max-width: $bp1) {
 			padding: 60px 40px 50px 40px;
 		}
 		@media (max-width: $bp2) {
 			padding: 30px 20px 30px 20px;
 		}
-		& h2 {
-			margin: 0px 0px 30px 0px;
-		}
 	}
 }
-.right-side__text {
-	font-size: 16px;
-	word-spacing: 5px;
-	text-indent: 50px;
-	text-align: justify;
-	line-height: 20px;
+.right-side {
+	&__title {
+		font-size: 24px;
+		font-weight: 600;
+		margin: 0px 0px 20px 0px;
+		@media (max-width: $bp1) {
+			font-size: 20px;
+		}
+		@media (max-width: $bp2) {
+		}
+	}
+	&__text {
+		font-size: 20px;
+		word-spacing: 5px;
+		text-indent: 50px;
+		text-align: justify;
+		line-height: 30px;
+		margin: 0px 0px 50px 0px;
+		@media (max-width: $bp1) {
+			font-size: 18px;
+		}
+		@media (max-width: $bp2) {
+			font-size: 16px;
+			line-height: 24px;
+			margin: 0px 0px 30px 0px;
+			&:last-child {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	&__list {
+		margin: 0px 0px 50px 0px;
+	}
+	&__list li {
+		position: relative;
+		margin: 0px 0px 20px 20px;
+		padding-left: 20px;
+		font-size: 20px;
+		text-align: justify;
+		line-height: 26px;
+		@media (max-width: $bp1) {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		@media (max-width: $bp2) {
+			font-size: 16px;
+		}
+	}
+	&__list li::before {
+		content: "";
+		position: absolute;
+		background-color: #000;
+		border-radius: 50%;
+		top: 6px;
+		left: 0;
+		width: 7px;
+		height: 7px;
+		@media (max-width: $bp2) {
+			top: 10px;
+		}
+	}
 }
 //<RIGHT SIDE>===============================================================================================================================================================================================
 
