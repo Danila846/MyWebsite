@@ -1,10 +1,10 @@
 const quizData = [
 	{
-		question: 'How old am I?',
-		a: '10',
-		b: '17',
-		c: '24',
-		d: '35',
+		question: 'Inside which HTML element do we put the JavaScript?',
+		a: '<scripting>',
+		b: '<js>',
+		c: '<script>',
+		d: '<javascript>',
 		correct: 'c'
 	}, {
 		question: 'What is the most used programming language in 2021?',
@@ -14,11 +14,11 @@ const quizData = [
 		d: 'JavaScript',
 		correct: 'd'
 	}, {
-		question: 'Who is the President of US?',
-		a: 'Joe Biden',
-		b: 'Ivan Saldano',
-		c: 'Florin pop',
-		d: 'Donald Trump',
+		question: 'What is the correct syntax for referring to an external script called "xxx.js"?',
+		a: '<script src="xxx.js">',
+		b: '<script href="xxx.js">',
+		c: '<script name="xxx.js">',
+		d: '<script>xxx.js</script>',
 		correct: 'a'
 	}, {
 		question: 'What does HTML stand for?',

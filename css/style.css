@@ -258,10 +258,6 @@ html::-webkit-scrollbar-thumb:hover {
     transition: all 0.7s ease 0s;
   }
 }
-.label-hello:hover {
-  content: "about";
-}
-
 .label-hello:after {
   content: "Hello.";
   transition: all 0.3s ease 0s;
@@ -319,14 +315,11 @@ html::-webkit-scrollbar-thumb:hover {
     opacity: 0;
     transform: translateY(30vh);
   }
-  /* WORK ON THISSS! */
-  /* 	0% {transform: translateY(100%);} */
   100% {
     opacity: 1;
     transform: translateY(0%);
   }
 }
-/* ------ Delays ------ */
 .delay02 {
   animation-delay: 0.2s;
 }

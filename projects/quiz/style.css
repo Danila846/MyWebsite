@@ -41,7 +41,7 @@ h2 {
 .btn {
 	padding: 18px;
 	border: none;
-	background-color: rgb(30, 107, 251);
+	background-color: hsl(19, 97%, 55%);
 	width: 100%;
 	font-size: 21px;
 	color: #fff;
@@ -54,11 +54,42 @@ h2 {
 }
 
 ul li {
+	position: relative;
 	font-size: 20px;
 	margin: 18px 0px;
 }
+ul li input {
+	display: none;
+}
+ul li input:checked + label::after {
+	transform: scale(1);
+}
+ul li label::before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: hsl(0, 0%, 100%);
+	border: 1px solid hsl(19, 97%, 55%);
+	border-radius: 50%;
+	top: 4px;
+	left: 0px;
+}
+ul li label::after {
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background-color: hsl(19, 97%, 55%);
+	border-radius: 50%;
+	top: 8px;
+	left: 4px;
+	transform: scale(0);
+}
 
 ul li label {
+	position: relative;
+	padding-left: 30px;
 	cursor: pointer;
 }
 
