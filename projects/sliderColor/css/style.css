@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*--------------------*/
+body {
+	font: 62.5% Verdana, Arial, sans-serif;
+	min-width: 400px;
+	padding: 20px;
+}
+.container {
+	max-width: 360px;
+	margin: 30px auto;
+}
+.btn {
+	padding: 10px;
+	margin: 0px 0px 0px 12px;
+	font-size: 20px;
+	background-color: rgb(246, 246, 246);
+	border-radius: 7px;
+	border: 1px solid #000000;
+	color: #000000;
+	cursor: pointer;
+}
+.active {
+	background-color: rgb(98, 108, 245);
+	color: #ffffff;
+}
+.slider {
+	width: 360px;
+	margin-top: 30px;
+}
+.color {
+	width: 360px;
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+	background-color: hsl(0, 100%, 50%);
+	color: #ffffff;
+	border: 1px solid #000000;
+}
+/* .a .ui-slider {
+	border-radius: 0;
+}
+.a .ui-slider-handle {
+	border-radius: 0;
+}
+.b .ui-slider {
+	border-radius: 0;
+	height: 1.1em;
+}
+.b .ui-slider-handle {
+	border-radius: 0;
+	top: 0.1em;
+	height: 0.75em;
+}
+.c .ui-slider {
+	border-radius: 2px;
+}
+.c .ui-slider-handle {
+	border-radius: 4px;
+	width: 0.4em;
+	margin-left: -0.2em;
+}
+.d .ui-slider {
+	height: 0.3em;
+	border-radius: 10px;
+}
+.d .ui-slider-handle {
+	height: 1em;
+	top: -0.45em;
+	border-radius: 0.5em;
+	width: 1em;
+	margin-left: -0.5em;
+}
+.e .ui-slider {
+	border-radius: 2px;
+	height: 0.3em;
+}
+.e .ui-slider-handle {
+	height: 1.4em;
+	top: -0.55em;
+	border-radius: 0 0 16px 16px;
+	width: 0.7em;
+	margin-left: -0.35em;
+} */
