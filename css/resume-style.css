@@ -466,6 +466,9 @@ h3.right-side__title {
   text-align: justify;
   line-height: 20px;
 }
+.right-side__list li:last-child {
+  margin-bottom: 0;
+}
 /* @media (max-width: 1270px) {
   .right-side__list li {
     font-size: 16px;
