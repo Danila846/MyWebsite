@@ -336,6 +336,7 @@ html::-webkit-scrollbar-thumb:hover {
   font-family: "Charm", cursive;
   font-size: 60px;
   text-align: center;
+  width: 100%;
 }
 @media (max-width: 1270px) {
   .about-me__title {
