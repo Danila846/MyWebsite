@@ -426,6 +426,10 @@ h3.right-side__title {
   margin: 0px 0px 12px 0px;
 }
 
+.right-side__line {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 1270px) {
   .right-side__title {
     font-size: 18px;
