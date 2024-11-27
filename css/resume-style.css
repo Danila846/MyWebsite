@@ -424,6 +424,7 @@ h3.right-side__title {
   font-size: 18px;
   font-weight: 500;
   margin: 0px 0px 12px 0px;
+  text-decoration: underline;
 }
 
 .right-side__line {
